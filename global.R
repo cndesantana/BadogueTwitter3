@@ -61,7 +61,7 @@ getFBID <- function(fburl){
    return(unlist(strsplit(httr::POST(url='https://findmyfbid.com',body=list(url = fburl), encode="json")$headers$`amp-redirect-to`,'/'))[5])
 }
 
-outputDir <- "/home/cdesantana/DataSCOUT/Objectiva/NucleoPolitico/Twitter/Correria3/outputs"
+outputDir <- "/home/ubuntu/auxfiles/outputs"
 
 reactions_timeseries_filename <- "reactions.xlsx"
 comments_timeseries_filename <- "comments.xlsx"
